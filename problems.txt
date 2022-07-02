@@ -1,0 +1,210 @@
+MODULE 1
+    Introduction
+        Execution of a Program
+        Binary Representation
+        2's Complement
+        Ranges of datatypes and constraints
+    
+    Bit Manipulation
+        Bitwise operators
+        checkbit
+        power of 2
+        count bits
+    Modulo arithmatic
+    Analysis
+        Time Complexity and space complexity
+        Time and space limitations
+    Need for optimization
+    
+    Problems
+        Non repeating number
+        Fast exponentiation
+        Only number that is not repeating thrice
+
+
+MODULE 2
+    Subsets
+    sum of xors
+    xor of sums
+    
+    Recursion
+        Recurrance relation and time complexity
+        Towers of hanoi
+        power function
+        subsets
+        permutations
+        all combinations of a keyboard
+        
+    Sorting
+        Bubble sort
+        Selection sort
+        Insertion sort
+        Problems
+            Count sort
+            Sort given binary array
+    Merge 2 sorted arrays
+    Merge sort
+    Inversion count
+
+MODULE 3
+    Binary search
+        Sum of pairs
+        Floor of a number
+        Finding frequency of each query in an array
+        non repeating number
+        Aggressive cows
+        Students and seats
+        Median of 2 sorted arrays
+    Hashing
+        Collision resolution
+        separate chaining
+        open addressing 
+        amortized analysis
+        linear probing
+        double hashing
+        hash function of a string
+
+MODULE 4
+    Problems
+        Find frequencies of queries in an array
+        Pair with sum k
+        distinct elements of a window of size k
+        print frequencies of each character
+        anagrams
+        First missing positive number
+    Rabin Karp
+    Comparing if given substring are same or not
+    Count number of primes from 1 to n
+    Sieve of erastosthenes
+    segmented sieve
+    Game theory
+    Nims game
+    Meet in the middle
+
+
+MODULE 5
+    Prefix and suffix sum
+    Array rotation
+    Binary search on rotated array    
+    Length of longest subarray with equal number of 0's and 1's
+    Collecting water
+    Sum of bitwise OR of all subarrays
+    
+    Stacks
+    Queues
+    Circular queues
+    getMax() in constant time using a stack
+    Queue using stack
+    
+    Stack
+        Balanced Paranthesis
+        First smaller element on the right
+        largest histogram area
+    Queue problems
+        Sliding window maximum
+        Killing dragons
+
+MODULE 6
+    Linked Lists
+        Print the linked list
+        length of a linked list
+        print reverse of a linked list
+        insert an element in a linked list
+        insert an element at a given position 
+        delete an element at a given position
+        distinct elements of a node
+        reversal of a linked list
+        Middle element of a linked list
+        Merging a linked list
+        Detect loop and break loop
+        Doubly linked list
+        LRU Cache
+        Clone a linked list with random pointer
+        Reverse alternate k elements of a linked list
+
+
+MODULE 7
+    Binary Trees
+        CBT and FBT
+        tree traversals
+        Mirror of a tree
+        Lever order traversal
+        count nodes of a tree
+        sum of all elements of a tree
+        Maximum element of a tree
+        height of a tree
+        Keeping track of level ends
+        sum of numbers formed by appending numbers of all the paths
+    Binary Search tree
+        Insertion 
+        Deletion
+        Trim the BST
+    Check if the given Binary tree is a BST or not
+    Given inorder and preorder. Generate Postorder
+    Path with longest sum
+    Nodes at distance k
+    vertical order traversal
+    left view
+    top view
+
+
+MODULE 8
+    Binary Trees
+        Iterative preorder traversal
+        Iterative inorder traversal
+        LCA in BST
+        LCA in Binary tree
+        Convert BST to DLL
+        Convert DLL to BST
+    Heap
+        Introduction and coding a heap
+        Print k smallest elements of the heap
+        Quick select algorithm
+        Print a matrix in sorted order whose rows are sorted
+        Anytime Median
+    Trie
+        Introduction and Coding
+
+
+MODULE 9
+    Trie
+        Find the number of string that starts with a given prefix
+        Number of distinct rows in a given matrix
+        Maximum XOR value pair in an array
+        Maximum XOR subarray in an array
+        Partition the string with the dictionary of words
+    Dynamic Programming (1D)
+        Identifying a DP problem
+        Approaching a DP problem
+        Overlapping subproblems
+            starcase
+            Tiling problem
+            non-adjacent 1's
+            No.of ways to roll a dice
+        Optimal Substructure
+            Painting houses
+            Workshop machines
+            Maximum subarray sum
+            Maximum non-adjacent subsequence sum
+            Longest Increasing subsequence
+
+MODULE 10
+    Dynamic Programming (2D)
+        Compute NCR
+        Knapsack problem
+        Coin change Problem (subsets)
+        Rat in a maze problem
+        Find sum of submatrix from indexes (i,j) to (k,l)
+        Maximum submatrix sum
+        Matrix chain multiplication
+        Maximum sum Game
+    Graphs
+        Introduction 
+        Graph representations
+        Check if a graph is a tree
+        Shortest path from source to destination
+        Diameter of a graph
+        Counting number of islands
+        Dijkstra
+        Topological sort
+        is Bipartite
