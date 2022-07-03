@@ -1,15 +1,8 @@
 MODULE 2
-    Recursion
-        all combinations of a keyboard
-        
     Sorting
-        Bubble sort
-        Selection sort
-        Insertion sort
         Problems
             Count sort
             Sort given binary array
-    Merge 2 sorted arrays
     Merge sort
     Inversion count
 

@@ -1,0 +1,17 @@
+Problem Name:
+Keyboard Combinations
+
+Problem Statement:
+We all remember the old style phones with keypad right? The problem is based on the same keypad where 2 is associated with letters "abc", 3 with "def" and so on. For every testcase, you will be given a number n. For all the digits of the n, print all the possible combinations that can be printed with those numbers. See the sample testcase for more understanding
+
+Constraints:
+1 <= t <= 100
+1 <= digits(n) <= 4
+
+
+Input Format:
+The first line consists of the number of testcases. Each testcase has a single number
+
+Output Format:
+Print all the combinations in sorted order.
+

@@ -1,0 +1,36 @@
+Case: 1
+wa
+wb
+wc
+xa
+xb
+xc
+ya
+yb
+yc
+za
+zb
+zc
+Case: 2
+at
+au
+av
+bt
+bu
+bv
+ct
+cu
+cv
+Case: 3
+pt
+pu
+pv
+qt
+qu
+qv
+rt
+ru
+rv
+st
+su
+sv

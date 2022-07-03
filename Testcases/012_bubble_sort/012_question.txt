@@ -1,0 +1,16 @@
+Problem Name:
+Bubble Sort
+
+Problem Statement:
+Implement Bubble Sort and print the total number of swaps involved to sort the array.
+
+Constraints:
+1 <= t <= 100
+1 <= n <= 1e3
+1 <= ar[i] <= 1e9
+
+Input Format:
+The first line is the number of testcases T followed by 2T testcases. The first line is the number of elements in the array. The second line are the n space separated integers
+
+Output Format:
+Print a single integer which is the number of swaps involved in the bubble sort

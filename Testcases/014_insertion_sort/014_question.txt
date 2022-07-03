@@ -1,0 +1,16 @@
+Problem Name:
+Insertion Sort
+
+Problem Statement:
+Implement Insertion Sort and print the index at which the ith element gets inserted [i>=1].
+
+Constraints:
+1 <= t <= 100
+1 <= n <= 1e3
+1 <= ar[i] <= 1e9
+
+Input Format:
+The first line is the number of testcases T followed by 2T testcases. The first line is the number of elements in the array. The second line are the n space separated integers
+
+Output Format:
+Print indexes as the space separated integers. Print the output of each testcase in each line.

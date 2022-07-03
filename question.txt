@@ -8,7 +8,7 @@ Constraints:
 
 
 Input Format:
-
+The first line consists of the number of testcases. Each testcase has 
 
 Output Format:
 

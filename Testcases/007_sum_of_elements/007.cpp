@@ -17,7 +17,7 @@ int main() {
 	// t1t2(fout, 1e3, 1, 1e6);
 
 	//t2
-	// t1t2(fout, 2e5, 1 1e9);
+	// t1t2(fout, 2e5, 1, 1e9);
 
 	//t3
 	maxTestCase(fout, 1e6, 1e12);

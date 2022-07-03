@@ -8,6 +8,7 @@
 #define vb vector<bool>
 #define vc vector<char>
 #define vll vector<ll>
+#define vstr vector<string>
 #define pb push_back
 #define sortasc(ar) sort(ar.begin(), ar.end())
 #define sortdsc(ar) sort(ar.begin(), ar.end(), greater<ll>())
@@ -124,6 +125,7 @@ void randomArray(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
 }
 
 void maxTestCase(ofstream& fout, ll n, ll M = 1e9) {
+	cout << 1 << endl;
 	fout << n << endl;
 	FOR(i, n) fout << M << " ";
 	fout << endl;
@@ -148,6 +150,26 @@ void t1t2(ofstream& fout, ll n, int m, int M) {
 void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
 	fout << n << endl;
 	FOR(i, n) fout << getRand(m, M) << endl;
+}
+
+ll replaceZeroOne(ofstream& fout, int x) {
+	string s = to_string(x);
+	FOR(i, s.length()) {
+		if ((s[i] == '0') || (s[i] == '1'))
+			s[i] = '8';
+	}
+	ll res = 0;
+	FOR(i, s.length()) res = (res * 10) + (s[i] - '0');
+	return res;
+}
+
+void singleNumberWithoutZeroOne(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+	fout << n << endl;
+	FOR(i, n) {
+		ll x =  getRand(m, M);
+		x = replaceZeroOne(fout, x);
+		fout << x << endl;
+	}
 }
 
 void nonRepeating(ofstream& fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false) {
@@ -204,5 +226,34 @@ void subsetSumTestCases(ofstream& fout, ll t, ll maxSize, ll m = 3, ll M = 1e9) 
 		fout << n << " " << sum << endl;
 		FOR(i, n) fout << ar[i] << " ";
 		fout << endl;
+	}
+}
+
+void twoArraysNoCommonElements(ofstream& fout, ll t, ll s1, ll s2, ll m = 1, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		int n1 = getRand(1, s1);
+		int n2 = getRand(1, s2);
+		vi ar, br;
+		usll s;
+		FOR(i, n1) {
+			int ele = getRand(m, M);
+			while (s.find(ele) != s.end()) ele = getRand(m, M);
+			ar.pb(ele);
+			s.insert(ele);
+		}
+		FOR(i, n2) {
+			int ele = getRand(m, M);
+			while (s.find(ele) != s.end()) ele = getRand(m, M);
+			br.pb(ele);
+		}
+		sortasc(ar); sortasc(br);
+		fout << n1 << " " << n2 << endl;
+		FOR(i, ar.size()) fout << ar[i] << " ";
+		fout << endl;
+
+		FOR(i, br.size()) fout << br[i] << " ";
+		fout << endl;
+
 	}
 }
