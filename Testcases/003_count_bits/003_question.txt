@@ -1,0 +1,16 @@
+Problem Name:
+Count number of bits
+
+Problem Statement:
+For all the testcases (t), you will be given a number (n). Find the number of set bits in the binary representation of the given number.
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e9
+
+Input Format:
+The first line represents the number of testcases(t) followed by t lines. Each line is a testcase that has a single integer.
+
+Output Format:
+Print the count of number of setbits in the binary representation of each integer.
+

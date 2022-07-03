@@ -146,6 +146,7 @@ void t1t2(ofstream& fout, ll n, int m, int M) {
 }
 
 void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+	fout << n << endl;
 	FOR(i, n) fout << getRand(m, M) << endl;
 }
 

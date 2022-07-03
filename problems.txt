@@ -1,14 +1,6 @@
 MODULE 1
-    Introduction
-        Execution of a Program
-        Binary Representation
-        2's Complement
-        Ranges of datatypes and constraints
     
     Bit Manipulation
-        Bitwise operators
-        checkbit
-        power of 2
         count bits
     Modulo arithmatic
     Analysis

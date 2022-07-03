@@ -1,0 +1,14 @@
+Problem Name:
+Power of 2
+
+Problem Statement:
+For a given number 'n', verify if it is a power of 2 or not. If yes, print "YES". Else, print "NO". 
+
+Constraints:
+1 <= n <= 1e9;
+
+Input Format:
+The first line consists of the number of testcases followed by t lines of integers. Each line is a testcase.
+
+Output Format:
+print a single word "YES" or "NO" for each testcase.
