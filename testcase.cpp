@@ -150,4 +150,31 @@ void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
 	FOR(i, n) fout << getRand(m, M) << endl;
 }
 
+void nonRepeating(ofstream& fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false) {
+	fout << n << endl;
+	--n;
+	vll ar;
+	usll s;
+	FOR(i, (n / k)) {
+		ll ele = getRand(m, M);
+		while (s.find(ele) != s.end()) ele = getRand(m, M);
+		FOR(j, k) ar.pb(ele);
+		s.insert(ele);
+	}
+	int ans = getRand(m, M);
+	while (s.find(ans) != s.end()) ans = getRand(m, M);
+	ar.pb(ans);
+	if (!sorted) shuffle(ar);
+	else sortasc(ar);
+	FOR(i, ar.size()) fout << ar[i] << " ";
+	fout << endl;
+}
+
+void pairTestcases(ofstream& fout, ll n, ll m1, ll M1, ll m2, ll M2) {
+	fout << n << endl;
+	while (n--) {
+		fout << getRand(m1, M1) << " "  << getRand(m2, M2) << endl;
+	}
+}
+
 

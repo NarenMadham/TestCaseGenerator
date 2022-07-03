@@ -1,15 +1,5 @@
 MODULE 1
-    
-    Bit Manipulation
-        count bits
-    Modulo arithmatic
-    Analysis
-        Time Complexity and space complexity
-        Time and space limitations
-    Need for optimization
-    
     Problems
-        Non repeating number
         Fast exponentiation
         Only number that is not repeating thrice
 

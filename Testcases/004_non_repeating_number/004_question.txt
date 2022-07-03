@@ -1,0 +1,15 @@
+Problem Name:
+Non Repeating Number
+
+Problem Statement:
+For each testcase, You will be given a series of n integers. The series has each element repeated twice except for one element. Find the element that is not repeating. 
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+
+Input Format:
+The first line consists of t i.e. the number of testcases. For each testcase, the first line consists of n which is the size of the series and the following consists of a series of n integers.
+
+Output Format:
+Print a single integer that is non-repeating in each series
