@@ -125,7 +125,7 @@ void randomArray(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
 }
 
 void maxTestCase(ofstream& fout, ll n, ll M = 1e9) {
-	cout << 1 << endl;
+	fout << 1 << endl;
 	fout << n << endl;
 	FOR(i, n) fout << M << " ";
 	fout << endl;

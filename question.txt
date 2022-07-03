@@ -5,6 +5,9 @@ Problem Statement:
 
 
 Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i] <= 1e9
 
 
 Input Format:

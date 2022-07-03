@@ -1,11 +1,3 @@
-MODULE 2
-    Sorting
-        Problems
-            Count sort
-            Sort given binary array
-    Merge sort
-    Inversion count
-
 MODULE 3
     Binary search
         Sum of pairs

@@ -1,0 +1,17 @@
+Problem Name:
+Inversion Count
+
+Problem Statement:
+For every testcase, you will be given a series of integers. Find the number of pairs such that i < j and ar[i] > ar[j] (inversion). Count the number of inversion of the given array.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i] <= 1e9
+
+
+Input Format:
+The first line consists of the number of testcases t. Each testcase has 2 lines. The first line is the size of the array n. The second line comprises of n space separated integers. 
+
+Output Format:
+Print a single integer which denotes the count of inversions in the given array

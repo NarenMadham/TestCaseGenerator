@@ -1,0 +1,17 @@
+Problem Name:
+Merge two sorted arrays
+
+Problem Statement:
+For every testcase, you will be give two sorted arrays ar and br. Merge all the elements of the two sorted arrays and print the elements in sorted order
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i], br[i] <= 1e9
+
+Input Format:
+The first line consists of the number of testcases. Each testcase has 3 lines. The first line has the sizes of the 2 arrays n1 and n2. The second line has n1 space separated integers. The third line has n2 space separated integers.
+
+Output Format:
+Print the sequece of n1 + n2 elements in sorted order after merging the 2 arrays
+
