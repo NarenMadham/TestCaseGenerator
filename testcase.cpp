@@ -40,7 +40,7 @@ using namespace std;
 ll getRand(ll m = 1, ll M = 1000000000) {
 	// uniform_int_distribution<> distrib(m, M);
 	// return distrib(gen);
-	return rnd.next(m, M + 1);
+	return rnd.next(m, M);
 }
 
 void increasingContigous(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
@@ -135,14 +135,14 @@ void t1t2(ofstream& fout, ll n, int m, int M) {
 	increasingContigous(fout, n, m, M);
 	decreasingRandom(fout, n, m, M);
 	decreasingContigous(fout, n, m, M);
-	singleElementArray(fout, n);
+	singleElementArray(fout, n, getRand(m, M));
 	intervalShuffle(fout, n);
 	int k = getRand(m, M);
 	while (n % k != 0) k = getRand(m, n);
-	eleKTimesRepeat(fout, n, k, false, m, M);
+	eleKTimesRepeat(fout, n, k, m, M);
 	randomArray(fout, n, m, M);
 	randomArray(fout, n, m, M);
-	randomArray(fout, n, m, M);
+	randomArray(fout, n, M);
 }
 
 void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
@@ -177,4 +177,32 @@ void pairTestcases(ofstream& fout, ll n, ll m1, ll M1, ll m2, ll M2) {
 	}
 }
 
+void multipleRandomArrays(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		int n = getRand(m, maxSize);
+		randomArray(fout, n, m, M);
+	}
+}
 
+void subsetSumTestCases(ofstream& fout, ll t, ll maxSize, ll m = 3, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		int n = getRand(3, maxSize	);
+		int sum = 0, count = getRand(1, n - 1);
+		usi s;
+		vll ar;
+		FOR(i, n) ar.pb(getRand(m, M));
+
+		while (count--) {
+			int i = getRand(1, n - 1);
+			while (s.find(i) != s.end()) i = getRand(1, n - 1);
+			s.insert(i);
+			sum += ar[i - 1];
+		}
+		if (t & 1) sum += M	;
+		fout << n << " " << sum << endl;
+		FOR(i, n) fout << ar[i] << " ";
+		fout << endl;
+	}
+}

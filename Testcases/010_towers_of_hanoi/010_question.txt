@@ -1,0 +1,15 @@
+Problem Name:
+Towers of Hanoi
+
+Problem Statement:
+There are 3 towers A, B and C. All the discs are initially on the tower A, arranged in such a way that biggest disk is on the bottom and the smallest on the top. Shift all the discs from A to C such that a bigger disc cannot be placed on a smaller disc on any tower because the disk might break. Shift all the discs from A to C where B can be used as a helper tower
+
+Constraints:
+1 <= t <= 10
+1 <= n <= 10
+
+Input Format:
+The first line consists of an integer which denotes the number of testcases. Each testcase has a single line which is the number of discs initially on the tower A
+
+Output Format:
+Print all the moves involved in moving all the discs from tower A to tower C line after line

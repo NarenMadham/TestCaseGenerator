@@ -1,7 +1,10 @@
 #include<bits/stdc++.h>
 #include "../../testcase.cpp"
-
 using namespace std;
+
+
+
+
 int main() {
 
 	ofstream fout;

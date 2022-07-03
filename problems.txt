@@ -1,20 +1,5 @@
-MODULE 1
-    Problems
-        Fast exponentiation
-        Only number that is not repeating thrice
-
-
 MODULE 2
-    Subsets
-    sum of xors
-    xor of sums
-    
     Recursion
-        Recurrance relation and time complexity
-        Towers of hanoi
-        power function
-        subsets
-        permutations
         all combinations of a keyboard
         
     Sorting

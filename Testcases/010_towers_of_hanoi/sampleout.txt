@@ -1,0 +1,12 @@
+Case: 1
+Move 1 from A to B
+Move 2 from A to C
+Move 1 from B to C
+Case: 2
+Move 1 from A to C
+Move 2 from A to B
+Move 1 from C to B
+Move 3 from A to C
+Move 1 from B to A
+Move 2 from B to C
+Move 1 from A to C
