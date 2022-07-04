@@ -1,0 +1,18 @@
+Problem Name:
+Distinct elements in a window
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n and an integer k. You have to print the distinct elements in each sub-array of size k of the array.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n, k <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. The first line of the testcase is the size of the array and the integer k. The second line of the testcase are the n space separated integers.
+
+Output Format:
+Print the distinct elements in each window of size k. The output of each testcase should be printed in each line.

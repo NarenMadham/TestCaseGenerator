@@ -1,0 +1,19 @@
+Problem Name:
+Painters Problem	
+
+Problem Statement:
+There are n walls and k painters. The work has to be assigned to k painters. Each painter has to paint the entire wall and the work cannot be shared. The painter can be assigned only continous walls to paint. Each wall i takes ar[i] time to paint by any painter.
+
+For every testcase, you will be given the number of walls and the number of painters and an array of integers which represents the time taken to paint the ith wall. Assign the work among the painters and print the minimum time taken to paint the entire walls with all the painters working simultaneously.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n, k <= 1e6
+1 <= ar[i] <= 1e9
+
+
+Input Format:
+The first line consists of the number of testcases t followed bt 2t lines. Each testcase has number of walls and the number of painters in the first line. The following line has the n space separated integers.
+
+Output Format:
+Print a single number for each testcase which is the minimum time taken to paint all the walls

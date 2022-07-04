@@ -15,6 +15,7 @@
 #define shuffle(ar) random_shuffle(ar.begin(), ar.end())
 #define minelement(ar) *min_element(ar.begin(), ar.end())
 #define maxelement(ar) *max_element(ar.begin(), ar.end())
+#define sumelement(ar) accumulate(ar.begin(), ar.end(), 0)
 
 #define FOR(i, n) for(int i=0;i<n;i++)
 
@@ -238,13 +239,13 @@ void multipleRandomArrays(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9
 	}
 }
 
-void multipleIncreasingArraysOneParam(ofstream& fout, ll t, ll maxSize, ll m = 0, ll M = 1e9) {
+void multipleArraysOneParam(ofstream& fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool sorted = false) {
 	fout << t << endl;
 	while (t--) {
 		int n = getRand(1, maxSize);
 		vll res = getRandomArray(n, m, M);
-		sortasc(res);
-		int k = getRand(res[0], res[n - 1]);
+		if (sorted) sortasc(res);
+		int k = getRand(1, n);
 		fout << n << " " << k << endl;
 		FOR(i, n) fout << res[i] << " ";
 		fout << endl;
@@ -298,6 +299,7 @@ void twoArraysNoCommonElements(ofstream& fout, ll t, ll s1, ll s2, ll m = 1, ll 
 	while (t--) {
 		int n1 = getRand(1, s1);
 		int n2 = getRand(1, s2);
+		if (!((n1 + n2) & 1)) n1++;
 		vi ar, br;
 		usll s;
 		FOR(i, n1) {
@@ -309,6 +311,7 @@ void twoArraysNoCommonElements(ofstream& fout, ll t, ll s1, ll s2, ll m = 1, ll 
 		FOR(i, n2) {
 			int ele = getRand(m, M);
 			while (s.find(ele) != s.end()) ele = getRand(m, M);
+			s.insert(ele);
 			br.pb(ele);
 		}
 		sortasc(ar); sortasc(br);

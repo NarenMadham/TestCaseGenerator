@@ -1,17 +1,16 @@
 Problem Name:
 
-
 Problem Statement:
-
 
 Constraints:
 1 <= t <= 1e3
-1 <= n <= 1e6
+1 <= n <= 1e5
 1 <= ar[i] <= 1e9
 
+The sum of lengths of all the arrays will not exceed 2e6
 
 Input Format:
-The first line consists of the number of testcases. Each testcase has 
+The first line consists of the number of testcases t followed by 3t lines. Each testcase has 
 
 Output Format:
 

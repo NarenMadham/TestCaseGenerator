@@ -1,0 +1,18 @@
+Problem Name:
+Median of two sorted arrays
+
+Problem Statement:
+For every testcase, you will be given two sorted arrays such that the sum of lengths of the two arrays is always odd. Find the median of the 2 sorted arrays. The median is the middle most element of a sequence. The median of 2 sorted arrays is the middle most elements when we sort all the elements of the 2 sorted arrays combined
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 3t lines. The first line of the testcase is the sizes of the arrays n1 and n2. The second line has n1 space separated integers. The third line has n2 space separated integers.
+
+Output Format:
+Print the single integer whic h is the median of the two sorted arrays.

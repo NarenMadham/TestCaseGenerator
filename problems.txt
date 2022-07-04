@@ -1,25 +1,10 @@
 MODULE 3
     Binary search
-        Sum of pairs
-        Floor of a number
-        Finding frequency of each query in an array
-        non repeating number
         Aggressive cows
-        Students and seats
-        Median of 2 sorted arrays
-    Hashing
-        Collision resolution
-        separate chaining
-        open addressing 
-        amortized analysis
-        linear probing
-        double hashing
-        hash function of a string
+        
 
 MODULE 4
     Problems
-        Find frequencies of queries in an array
-        Pair with sum k
         distinct elements of a window of size k
         print frequencies of each character
         anagrams
