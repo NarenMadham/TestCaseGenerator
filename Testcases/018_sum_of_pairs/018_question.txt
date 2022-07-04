@@ -1,0 +1,17 @@
+Problem Name:
+Sum of Pairs
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n and an integer k. Print YES if there exists an array with a pair of sum k else print NO
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i], k <= 1e9
+
+
+Input Format:
+The first line consists of the number of testcases T. Following 2T lines are the testcases. The first line has 2 space separated integers. The size of the array n and the integer k. The following line has n space separated integers.
+
+Output Format:
+Print YES is there exists a sum else print NO

@@ -1,0 +1,18 @@
+Problem Name:
+Perfect String
+
+Problem Statement:
+A string is said to be perfect if it has all the characters from a-z. For every testcase, you will be given a string of length n. If the string is a perfect string, print "YES", else print "NO"
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e4
+
+Overall sum of lengths of the strings will not exceed 2e6
+
+
+Input Format:
+The first line consists of the number of testcases. Each testcase has a single string.
+
+Output Format:
+Output "YES" is the given string is a perfect string, else print "NO"

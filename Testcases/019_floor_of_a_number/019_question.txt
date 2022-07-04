@@ -1,0 +1,18 @@
+Problem Name:
+Floor of a number
+
+Problem Statement:
+For every testcase, you will be given an sorted array of integers of size n and an integer k. Find the floor of the number in the array i.e. find the greatest element in the array that is less than the given number k.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i] <= 1e9
+
+Sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t. Following 2t lines are the testcases. The first line of the test case are the 2 space separated integers n and k. The following line has n space separated integers.
+
+Output Format:
+Print the value of the floor of the given number in the array. If there's no floor, print -1

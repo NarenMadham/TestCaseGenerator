@@ -1,0 +1,18 @@
+Problem Name:
+Finding Frequencies
+
+Problem Statement:
+You will be given an array of size n and q queries. For each query, print the number of occurances of that number in the array.
+
+Constraints:
+1 <= n <= 1e5
+1 <= q <= 1e3
+1 <= ar[i] <= 1e9
+
+
+Input Format:
+The first line consists of the number of elements in the array. Following line n space separated integers. The third line has the number of queries q. The following q lines have the single integer queries
+
+Output Format:
+print a single integer for each query which is the number of occurances of that query.
+

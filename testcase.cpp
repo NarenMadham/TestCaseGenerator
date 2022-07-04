@@ -13,6 +13,8 @@
 #define sortasc(ar) sort(ar.begin(), ar.end())
 #define sortdsc(ar) sort(ar.begin(), ar.end(), greater<ll>())
 #define shuffle(ar) random_shuffle(ar.begin(), ar.end())
+#define minelement(ar) *min_element(ar.begin(), ar.end())
+#define maxelement(ar) *max_element(ar.begin(), ar.end())
 
 #define FOR(i, n) for(int i=0;i<n;i++)
 
@@ -42,6 +44,24 @@ ll getRand(ll m = 1, ll M = 1000000000) {
 	// uniform_int_distribution<> distrib(m, M);
 	// return distrib(gen);
 	return rnd.next(m, M);
+}
+
+vll getRandomArray(ll n, ll m = 1, ll M = 1e9) {
+	vll ar;
+	FOR(i, n) ar.pb(getRand(m, M));
+	return ar;
+}
+
+vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9) {
+	vll ar;
+	usll s;
+	FOR(i, n) {
+		ll ele = getRand(m, M);
+		while (s.find(ele) != s.end()) ele = getRand(m, M);
+		s.insert(ele);
+		ar.pb(ele);
+	}
+	return ar;
 }
 
 void increasingContigous(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
@@ -152,6 +172,17 @@ void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
 	FOR(i, n) fout << getRand(m, M) << endl;
 }
 
+void singleNumberWithoutDup(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+	fout << n << endl;
+	usll s;
+	FOR(i, n) {
+		int ele = getRand(m, M);
+		while (s.find(ele) != s.end()) ele = getRand(m, M);
+		fout << ele << endl;
+		s.insert(ele);
+	}
+}
+
 ll replaceZeroOne(ofstream& fout, int x) {
 	string s = to_string(x);
 	FOR(i, s.length()) {
@@ -207,6 +238,39 @@ void multipleRandomArrays(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9
 	}
 }
 
+void multipleIncreasingArraysOneParam(ofstream& fout, ll t, ll maxSize, ll m = 0, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		int n = getRand(1, maxSize);
+		vll res = getRandomArray(n, m, M);
+		sortasc(res);
+		int k = getRand(res[0], res[n - 1]);
+		fout << n << " " << k << endl;
+		FOR(i, n) fout << res[i] << " ";
+		fout << endl;
+	}
+}
+
+void arrayWithPairSum(ofstream& fout, ll n, int f, ll m = 1, ll M = 1e9) {
+	vll res = getRandomArray(n - 2, m, M);
+	ll a = getRand(m, M), b = getRand(m, M);
+	res.pb(a); res.pb(b);
+	ll k = a + b;
+	if ((f == 1) && (getRand(m, M) & 1)) k = minelement(res);
+	shuffle(res);
+	fout << n << " " << k << endl;
+	FOR(i, n) fout << res[i] << " ";
+	fout << endl;
+}
+
+void multipleArrayWithPairSum(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		ll n = getRand(1, maxSize);
+		arrayWithPairSum(fout, n, t & 1, m, M);
+	}
+}
+
 void subsetSumTestCases(ofstream& fout, ll t, ll maxSize, ll m = 3, ll M = 1e9) {
 	fout << t << endl;
 	while (t--) {
@@ -257,3 +321,16 @@ void twoArraysNoCommonElements(ofstream& fout, ll t, ll s1, ll s2, ll m = 1, ll 
 
 	}
 }
+
+void randomStrings(ofstream& fout, ll t, ll maxSize) {
+	fout << t << endl;
+	while (t--) {
+		if (t & 1) {
+			fout << rnd.next("[a-z]{" + to_string(getRand(1, maxSize)) + "}") << endl;
+		} else {
+			fout << rnd.next("[a-y]{" + to_string(getRand(1, maxSize)) + "}") << endl;
+		}
+	}
+}
+
+
