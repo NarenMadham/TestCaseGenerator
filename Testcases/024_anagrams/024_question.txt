@@ -1,0 +1,19 @@
+Problem Name:
+Anagrams
+
+Problem Statement:
+Anagrams are two string that comprises of same letters along with the numbe rof times they have appeared.
+For every testcase, you will be given two strings a and b of same length. If the given strings are anagrams, print YES else print NO
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+'a' <= a[i], b[i] <= 'z'
+
+The sum of lengths of all the strings will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each line has two space separated strings.
+
+Output Format:
+Print YES if the given strings are anagrams else print NO

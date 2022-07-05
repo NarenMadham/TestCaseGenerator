@@ -1,7 +1,10 @@
 #include "testlib.h"
 #include <iostream>
 #define endl "\n"
-#define fio ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
+#define fio                           \
+	ios_base::sync_with_stdio(false); \
+	cin.tie(0);                       \
+	cout.tie(0)
 #define ll long long
 #define lll __uint128_t
 #define vi vector<int>
@@ -17,7 +20,7 @@
 #define maxelement(ar) *max_element(ar.begin(), ar.end())
 #define sumelement(ar) accumulate(ar.begin(), ar.end(), 0)
 
-#define FOR(i, n) for(int i=0;i<n;i++)
+#define FOR(i, n) for (int i = 0; i < n; i++)
 
 #define umii unordered_map<int, int>
 #define mii map<int, int>
@@ -27,7 +30,6 @@ using namespace std;
 
 // random_device rd;  //Will be used to obtain a seed for the random number engine
 // mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-
 
 /**
  *
@@ -39,120 +41,156 @@ using namespace std;
  *
  *
  *
-*/
+ */
 
-ll getRand(ll m = 1, ll M = 1000000000) {
+ll getRand(ll m = 1, ll M = 1000000000)
+{
 	// uniform_int_distribution<> distrib(m, M);
 	// return distrib(gen);
 	return rnd.next(m, M);
 }
 
-vll getRandomArray(ll n, ll m = 1, ll M = 1e9) {
+vll getRandomArray(ll n, ll m = 1, ll M = 1e9)
+{
 	vll ar;
-	FOR(i, n) ar.pb(getRand(m, M));
+	FOR(i, n)
+	ar.pb(getRand(m, M));
 	return ar;
 }
 
-vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9) {
+string getRandomString(ll n)
+{
+	return rnd.next("[a-z]{" + to_string(n) + "}");
+}
+
+vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9)
+{
 	vll ar;
 	usll s;
-	FOR(i, n) {
+	FOR(i, n)
+	{
 		ll ele = getRand(m, M);
-		while (s.find(ele) != s.end()) ele = getRand(m, M);
+		while (s.find(ele) != s.end())
+			ele = getRand(m, M);
 		s.insert(ele);
 		ar.pb(ele);
 	}
 	return ar;
 }
 
-void increasingContigous(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void increasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
-	for (ll i = m; i < (m + n); i++) {
+	for (ll i = m; i < (m + n); i++)
+	{
 		fout << i << " ";
 	}
 	fout << endl;
 }
 
-void decreasingContigous(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void decreasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
-	for (ll i = (m + n - 1); i >= m; i--) {
+	for (ll i = (m + n - 1); i >= m; i--)
+	{
 		fout << i << " ";
 	}
 	fout << endl;
 }
 
-void intervalShuffle(ofstream& fout, ll n, ll m = 1) {
+void intervalShuffle(ofstream &fout, ll n, ll m = 1)
+{
 	fout << n << endl;
 
 	vll ar;
-	for (ll i = m; i < (m + n); i++) {
+	for (ll i = m; i < (m + n); i++)
+	{
 		ar.push_back(i);
 	}
 	random_shuffle(ar.begin(), ar.end());
-	FOR(i, ar.size()) fout << ar[i] << " ";
+	FOR(i, ar.size())
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-
-void increasingRandom(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void increasingRandom(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
 	vll ar;
 	// usll s;
-	FOR(i, n) {
+	FOR(i, n)
+	{
 		ll ele = getRand(m, M);
 		ar.push_back(ele);
 	}
 	sortasc(ar);
-	FOR(i, n) fout << ar[i] << " ";
+	FOR(i, n)
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-
-void decreasingRandom(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void decreasingRandom(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
 	vll ar;
-	FOR(i, n) ar.push_back(getRand(m, M));
+	FOR(i, n)
+	ar.push_back(getRand(m, M));
 	sortdsc(ar);
-	FOR(i, n) fout << ar[i] << " ";
+	FOR(i, n)
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-void singleElementArray(ofstream& fout, ll n, ll ele = getRand(1, 1e9)) {
+void singleElementArray(ofstream &fout, ll n, ll ele = getRand(1, 1e9))
+{
 	fout << n << endl;
-	FOR(i, n) fout << ele << " ";
+	FOR(i, n)
+	fout << ele << " ";
 	fout << endl;
 }
 
-void eleKTimesRepeat(ofstream& fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false) {
+void eleKTimesRepeat(ofstream &fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false)
+{
 	fout << n << endl;
 	vll ar;
-	FOR(i, (n / k)) {
+	FOR(i, (n / k))
+	{
 		ll ele = getRand(m, M);
-		FOR(j, k) ar.pb(ele);
+		FOR(j, k)
+		ar.pb(ele);
 	}
-	if (!sorted) random_shuffle(ar.begin(), ar.end());
-	else sortasc(ar);
-	FOR(i, ar.size()) fout << ar[i] << " ";
+	if (!sorted)
+		random_shuffle(ar.begin(), ar.end());
+	else
+		sortasc(ar);
+	FOR(i, ar.size())
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-void randomArray(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void randomArray(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
 	vll ar;
-	FOR(i, n) ar.pb(getRand(m, M));
+	FOR(i, n)
+	ar.pb(getRand(m, M));
 	shuffle(ar);
-	FOR(i, n) fout << ar[i] << " ";
+	FOR(i, n)
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-void maxTestCase(ofstream& fout, ll n, ll M = 1e9) {
+void maxTestCase(ofstream &fout, ll n, ll M = 1e9)
+{
 	fout << 1 << endl;
 	fout << n << endl;
-	FOR(i, n) fout << M << " ";
+	FOR(i, n)
+	fout << M << " ";
 	fout << endl;
 }
 
-void t1t2(ofstream& fout, ll n, int m, int M) {
+void t1t2(ofstream &fout, ll n, int m, int M)
+{
 	fout << 10 << endl;
 	increasingRandom(fout, n, m, M);
 	increasingContigous(fout, n, m, M);
@@ -161,179 +199,272 @@ void t1t2(ofstream& fout, ll n, int m, int M) {
 	singleElementArray(fout, n, getRand(m, M));
 	intervalShuffle(fout, n);
 	int k = getRand(m, M);
-	while (n % k != 0) k = getRand(m, n);
+	while (n % k != 0)
+		k = getRand(m, n);
 	eleKTimesRepeat(fout, n, k, m, M);
 	randomArray(fout, n, m, M);
 	randomArray(fout, n, m, M);
 	randomArray(fout, n, M);
 }
 
-void singleNumber(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void singleNumber(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
-	FOR(i, n) fout << getRand(m, M) << endl;
+	FOR(i, n)
+	fout << getRand(m, M) << endl;
 }
 
-void singleNumberWithoutDup(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void singleNumberWithoutDup(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
 	usll s;
-	FOR(i, n) {
+	FOR(i, n)
+	{
 		int ele = getRand(m, M);
-		while (s.find(ele) != s.end()) ele = getRand(m, M);
+		while (s.find(ele) != s.end())
+			ele = getRand(m, M);
 		fout << ele << endl;
 		s.insert(ele);
 	}
 }
 
-ll replaceZeroOne(ofstream& fout, int x) {
+ll replaceZeroOne(ofstream &fout, int x)
+{
 	string s = to_string(x);
-	FOR(i, s.length()) {
+	FOR(i, s.length())
+	{
 		if ((s[i] == '0') || (s[i] == '1'))
 			s[i] = '8';
 	}
 	ll res = 0;
-	FOR(i, s.length()) res = (res * 10) + (s[i] - '0');
+	FOR(i, s.length())
+	res = (res * 10) + (s[i] - '0');
 	return res;
 }
 
-void singleNumberWithoutZeroOne(ofstream& fout, ll n, ll m = 1, ll M = 1e9) {
+void singleNumberWithoutZeroOne(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
+{
 	fout << n << endl;
-	FOR(i, n) {
-		ll x =  getRand(m, M);
+	FOR(i, n)
+	{
+		ll x = getRand(m, M);
 		x = replaceZeroOne(fout, x);
 		fout << x << endl;
 	}
 }
 
-void nonRepeating(ofstream& fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false) {
+void nonRepeating(ofstream &fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sorted = false)
+{
 	fout << n << endl;
 	--n;
 	vll ar;
 	usll s;
-	FOR(i, (n / k)) {
+	FOR(i, (n / k))
+	{
 		ll ele = getRand(m, M);
-		while (s.find(ele) != s.end()) ele = getRand(m, M);
-		FOR(j, k) ar.pb(ele);
+		while (s.find(ele) != s.end())
+			ele = getRand(m, M);
+		FOR(j, k)
+		ar.pb(ele);
 		s.insert(ele);
 	}
 	int ans = getRand(m, M);
-	while (s.find(ans) != s.end()) ans = getRand(m, M);
+	while (s.find(ans) != s.end())
+		ans = getRand(m, M);
 	ar.pb(ans);
-	if (!sorted) shuffle(ar);
-	else sortasc(ar);
-	FOR(i, ar.size()) fout << ar[i] << " ";
+	if (!sorted)
+		shuffle(ar);
+	else
+		sortasc(ar);
+	FOR(i, ar.size())
+	fout << ar[i] << " ";
 	fout << endl;
 }
 
-void pairTestcases(ofstream& fout, ll n, ll m1, ll M1, ll m2, ll M2) {
+void pairTestcases(ofstream &fout, ll n, ll m1, ll M1, ll m2, ll M2)
+{
 	fout << n << endl;
-	while (n--) {
-		fout << getRand(m1, M1) << " "  << getRand(m2, M2) << endl;
+	while (n--)
+	{
+		fout << getRand(m1, M1) << " " << getRand(m2, M2) << endl;
 	}
 }
 
-void multipleRandomArrays(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9) {
+void multipleRandomArrays(ofstream &fout, ll t, ll maxSize, ll m = 1, ll M = 1e9)
+{
 	fout << t << endl;
-	while (t--) {
+	while (t--)
+	{
 		int n = getRand(m, maxSize);
 		randomArray(fout, n, m, M);
 	}
 }
 
-void multipleArraysOneParam(ofstream& fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool sorted = false) {
+void multipleArraysOneParam(ofstream &fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool sorted = false)
+{
 	fout << t << endl;
-	while (t--) {
+	while (t--)
+	{
 		int n = getRand(1, maxSize);
 		vll res = getRandomArray(n, m, M);
-		if (sorted) sortasc(res);
+		if (sorted)
+			sortasc(res);
 		int k = getRand(1, n);
 		fout << n << " " << k << endl;
-		FOR(i, n) fout << res[i] << " ";
+		FOR(i, n)
+		fout << res[i] << " ";
 		fout << endl;
 	}
 }
 
-void arrayWithPairSum(ofstream& fout, ll n, int f, ll m = 1, ll M = 1e9) {
+void arrayWithPairSum(ofstream &fout, ll n, int f, ll m = 1, ll M = 1e9)
+{
 	vll res = getRandomArray(n - 2, m, M);
 	ll a = getRand(m, M), b = getRand(m, M);
-	res.pb(a); res.pb(b);
+	res.pb(a);
+	res.pb(b);
 	ll k = a + b;
-	if ((f == 1) && (getRand(m, M) & 1)) k = minelement(res);
+	if ((f == 1) && (getRand(m, M) & 1))
+		k = minelement(res);
 	shuffle(res);
 	fout << n << " " << k << endl;
-	FOR(i, n) fout << res[i] << " ";
+	FOR(i, n)
+	fout << res[i] << " ";
 	fout << endl;
 }
 
-void multipleArrayWithPairSum(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9) {
+void multipleArrayWithPairSum(ofstream &fout, ll t, ll maxSize, ll m = 1, ll M = 1e9)
+{
 	fout << t << endl;
-	while (t--) {
+	while (t--)
+	{
 		ll n = getRand(1, maxSize);
 		arrayWithPairSum(fout, n, t & 1, m, M);
 	}
 }
 
-void subsetSumTestCases(ofstream& fout, ll t, ll maxSize, ll m = 3, ll M = 1e9) {
+void subsetSumTestCases(ofstream &fout, ll t, ll maxSize, ll m = 3, ll M = 1e9)
+{
 	fout << t << endl;
-	while (t--) {
-		int n = getRand(3, maxSize	);
+	while (t--)
+	{
+		int n = getRand(3, maxSize);
 		int sum = 0, count = getRand(1, n - 1);
 		usi s;
 		vll ar;
-		FOR(i, n) ar.pb(getRand(m, M));
+		FOR(i, n)
+		ar.pb(getRand(m, M));
 
-		while (count--) {
+		while (count--)
+		{
 			int i = getRand(1, n - 1);
-			while (s.find(i) != s.end()) i = getRand(1, n - 1);
+			while (s.find(i) != s.end())
+				i = getRand(1, n - 1);
 			s.insert(i);
 			sum += ar[i - 1];
 		}
-		if (t & 1) sum += M	;
+		if (t & 1)
+			sum += M;
 		fout << n << " " << sum << endl;
-		FOR(i, n) fout << ar[i] << " ";
+		FOR(i, n)
+		fout << ar[i] << " ";
 		fout << endl;
 	}
 }
 
-void twoArraysNoCommonElements(ofstream& fout, ll t, ll s1, ll s2, ll m = 1, ll M = 1e9) {
+void twoArraysNoCommonElements(ofstream &fout, ll t, ll s1, ll s2, ll m = 1, ll M = 1e9)
+{
 	fout << t << endl;
-	while (t--) {
+	while (t--)
+	{
 		int n1 = getRand(1, s1);
 		int n2 = getRand(1, s2);
-		if (!((n1 + n2) & 1)) n1++;
+		if (!((n1 + n2) & 1))
+			n1++;
 		vi ar, br;
 		usll s;
-		FOR(i, n1) {
+		FOR(i, n1)
+		{
 			int ele = getRand(m, M);
-			while (s.find(ele) != s.end()) ele = getRand(m, M);
+			while (s.find(ele) != s.end())
+				ele = getRand(m, M);
 			ar.pb(ele);
 			s.insert(ele);
 		}
-		FOR(i, n2) {
+		FOR(i, n2)
+		{
 			int ele = getRand(m, M);
-			while (s.find(ele) != s.end()) ele = getRand(m, M);
+			while (s.find(ele) != s.end())
+				ele = getRand(m, M);
 			s.insert(ele);
 			br.pb(ele);
 		}
-		sortasc(ar); sortasc(br);
+		sortasc(ar);
+		sortasc(br);
 		fout << n1 << " " << n2 << endl;
-		FOR(i, ar.size()) fout << ar[i] << " ";
+		FOR(i, ar.size())
+		fout << ar[i] << " ";
 		fout << endl;
 
-		FOR(i, br.size()) fout << br[i] << " ";
+		FOR(i, br.size())
+		fout << br[i] << " ";
 		fout << endl;
-
 	}
 }
 
-void randomStrings(ofstream& fout, ll t, ll maxSize) {
+void randomStrings(ofstream &fout, ll t, ll maxSize)
+{
 	fout << t << endl;
-	while (t--) {
-		if (t & 1) {
+	while (t--)
+	{
+		if (t & 1)
+		{
 			fout << rnd.next("[a-z]{" + to_string(getRand(1, maxSize)) + "}") << endl;
-		} else {
+		}
+		else
+		{
 			fout << rnd.next("[a-y]{" + to_string(getRand(1, maxSize)) + "}") << endl;
 		}
 	}
 }
 
+void twoStringsMultiple(ofstream &fout, ll t, ll maxSize)
+{
+	fout << t << endl;
+	while (t--)
+	{
+		int n = getRand(1, maxSize);
+		string x = rnd.next("[a-z]{" + to_string(n) + "}");
+		fout << x << " ";
+		int m = getRand(1, maxSize);
+		string y = rnd.next("[a-z]{" + to_string(m) + "}");
+		fout << y << endl;
+	}
+}
 
+void stringSubstringMultiple(ofstream &fout, ll t, ll maxSize)
+{
+	fout << t << endl;
+	while (t--)
+	{
+		int n = getRand(1, maxSize);
+		// cout << "a" << endl;
+		// while(n != 0)n= getRand(1, maxSize);
+		int k = getRand(1, n);
+		// cout << "b" << endl;
+		// while(k != 0) k = getRand(1, n/2);
+		// while((n-k) <= 0) k = getRand(1, n/2);
+		string t = getRandomString(n - k);
+		// cout << "c" << endl;
+		string p = getRandomString(k);
+		// cout << "d" << endl;
+		int idx = getRand(0, t.length());
+		// cout << "e" << endl;
+		string res = "";
+		FOR(i, idx) res += t[i];
+		if(getRand(1,2) & 1) res += p;
+		else res += getRandomString(k);
+		for(int i=idx;i<t.length();i++) res += t[i];
+		fout << res << " " << p << endl;
+	}
+}

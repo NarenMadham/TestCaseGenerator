@@ -5,8 +5,6 @@ MODULE 3
 
 MODULE 4
     Problems
-        distinct elements of a window of size k
-        print frequencies of each character
         anagrams
         First missing positive number
     Rabin Karp
