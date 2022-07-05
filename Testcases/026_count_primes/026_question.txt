@@ -1,0 +1,15 @@
+Problem Name:
+Count Primes
+
+Problem Statement:
+For every testcase, you will be given a value of n. Find all the primes that are less than or equal to the given n
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each testcase has a single integer n
+
+Output Format:
+Print a single integer i.e. the count of the primes less thatn or equal to the given number

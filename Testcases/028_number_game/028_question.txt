@@ -1,0 +1,17 @@
+Problem Name:
+Khaleesi and Khal
+
+Problem Statement:
+Khaleesi and Khal are playing a game. There are 2 numbers n and k. They start off with n and can substract any number of range 1 to k from n. The person to substract the last number is the winner of the game. You are on the side of Khaleesi so Khal gets to pick first everytime. Assuming that both are playing optimally, tell if Khaleesi can win this game or not.
+
+For every testcase, you will be given two values n and k. If there is a chance for Khaleesi to win the game, print YES, else print NO
+
+Constraints:
+1 <= t <= 1e6
+1 <= n,k <= 1e9
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each testcase has 2 space separated integers n and k.
+
+Output Format:
+Print YES is Khaleesi has a chance to win. Else print NO

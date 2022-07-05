@@ -1,10 +1,7 @@
 #include "testlib.h"
 #include <iostream>
 #define endl "\n"
-#define fio                           \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(0);                       \
-	cout.tie(0)
+#define fio ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define ll long long
 #define lll __uint128_t
 #define vi vector<int>
@@ -13,6 +10,8 @@
 #define vll vector<ll>
 #define vstr vector<string>
 #define pb push_back
+#define pii pair<int, int>
+#define pll pair<ll, ll>
 #define sortasc(ar) sort(ar.begin(), ar.end())
 #define sortdsc(ar) sort(ar.begin(), ar.end(), greater<ll>())
 #define shuffle(ar) random_shuffle(ar.begin(), ar.end())
@@ -78,14 +77,31 @@ vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9)
 	return ar;
 }
 
+void multipleRandomPair(ofstream& fout, ll t, ll diff, ll m = 1, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		ll n = getRand(m, M);
+		ll m = getRand(n + 1, n + diff);
+		fout << n << " " << m << endl;
+	}
+}
+
+void rangeRandomPairMultiple(ofstream& fout, ll t, ll m1 = 1, ll M1 = 1e9, ll m2 = 1, ll M2 = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		ll n = getRand(m1, M1);
+		ll m = getRand(m2, M2);
+		fout << n << " " << m << endl;
+	}
+}
+
 void increasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
 {
 	fout << n << endl;
 	for (ll i = m; i < (m + n); i++)
 	{
-		fout << i << " ";
+		fout << i << endl;
 	}
-	fout << endl;
 }
 
 void decreasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
@@ -159,12 +175,14 @@ void eleKTimesRepeat(ofstream &fout, ll n, ll k, ll m = 1, ll M = 1e9, bool sort
 		FOR(j, k)
 		ar.pb(ele);
 	}
+	// if (getRand(1, 3) & 1) {
+	// 	ar[0] = 1e9;
+	// }
 	if (!sorted)
 		random_shuffle(ar.begin(), ar.end());
 	else
 		sortasc(ar);
-	FOR(i, ar.size())
-	fout << ar[i] << " ";
+	FOR(i, ar.size()) fout << ar[i] << " ";
 	fout << endl;
 }
 
@@ -462,9 +480,9 @@ void stringSubstringMultiple(ofstream &fout, ll t, ll maxSize)
 		// cout << "e" << endl;
 		string res = "";
 		FOR(i, idx) res += t[i];
-		if(getRand(1,2) & 1) res += p;
+		if (getRand(1, 2) & 1) res += p;
 		else res += getRandomString(k);
-		for(int i=idx;i<t.length();i++) res += t[i];
+		for (int i = idx; i < t.length(); i++) res += t[i];
 		fout << res << " " << p << endl;
 	}
 }

@@ -5,12 +5,8 @@ MODULE 3
 
 MODULE 4
     Problems
-        anagrams
-        First missing positive number
-    Rabin Karp
+    First missing positive number
     Comparing if given substring are same or not
-    Count number of primes from 1 to n
-    Sieve of erastosthenes
     segmented sieve
     Game theory
     Nims game

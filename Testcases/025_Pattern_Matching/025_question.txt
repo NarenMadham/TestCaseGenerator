@@ -1,0 +1,18 @@
+Problem Name:
+Pattern Matching
+
+Problem Statement:
+For every testcase, you will be given a text and a pattern. Find if the pattern is a substring of a text of not. If yes, print "YES". Else, print "NO"
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+all the strings are lower case letters of english alphabet
+
+The sum of lengths of all the strings will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each testcase has 2 space separated strings
+
+Output Format:
+Print YES if pattern  is a substring of the text. Else, print NO

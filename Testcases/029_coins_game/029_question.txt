@@ -1,0 +1,21 @@
+Problem Name:
+Coins game
+
+Problem Statement:
+Sheldon and Leonard are playing a game of coins. There are n piles of coins where each pile has ar[i] coins. Either of the player can take any number of coins but from only one pile. The player who chooses last wins. Since Sheldon is stuborn, he always gets to choose first. Tell if Leonard can win the game if both of them play optimally.
+
+For each testcase, you will be given an array of integers where each element represents the number of coins. Print YES if Leonard has a chance to win the game, else print NO
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line is the number of elements of the array. The following line has n space separated integers.
+
+Output Format:
+Print YES if Leonard can win the game else print NO
+

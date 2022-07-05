@@ -1,0 +1,18 @@
+Problem Name:
+Segmented Sieve
+
+Problem Statement:
+For every testcase, you will be given a pair of integers. Print the count of number of primes present in between the given 2 integers (inclusive of those 2 numbers).
+
+Constraints:
+1 <= t <= 1e3
+1 <= a < b <= 1e12
+1 <= (b-a) <= 1e6
+
+The sum of lengths of all the differences will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each testcase has a pair of space separated integers.
+
+Output Format:
+Print the count of the primes present in between the given pair of integers.
