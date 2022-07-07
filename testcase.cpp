@@ -18,6 +18,8 @@
 #define minelement(ar) *min_element(ar.begin(), ar.end())
 #define maxelement(ar) *max_element(ar.begin(), ar.end())
 #define sumelement(ar) accumulate(ar.begin(), ar.end(), 0)
+#define rotatec(ar, k) rotate(ar.begin(), ar.begin()+ar.size()-k, ar.end())
+#define rotateac(ar, k) rotate(ar.begin(), ar.begin()-k, ar.end())
 
 #define FOR(i, n) for (int i = 0; i < n; i++)
 
@@ -49,11 +51,12 @@ ll getRand(ll m = 1, ll M = 1000000000)
 	return rnd.next(m, M);
 }
 
-vll getRandomArray(ll n, ll m = 1, ll M = 1e9)
+vll getRandomArray(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 {
 	vll ar;
 	FOR(i, n)
 	ar.pb(getRand(m, M));
+	if(sorted) sortasc(ar);
 	return ar;
 }
 
@@ -62,7 +65,7 @@ string getRandomString(ll n)
 	return rnd.next("[a-z]{" + to_string(n) + "}");
 }
 
-vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9)
+vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 {
 	vll ar;
 	usll s;
@@ -74,7 +77,17 @@ vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9)
 		s.insert(ele);
 		ar.pb(ele);
 	}
+	if(sorted) sortasc(ar);
 	return ar;
+}
+
+void printpair(ofstream& fout, pll x){
+	fout << x.first << " " << x.second;
+}
+
+pll getRandomPair(ll m = 1, ll M = 1e9){
+	ll a = getRand(m, M);
+	return make_pair(a,getRand(a, M));
 }
 
 void multipleRandomPair(ofstream& fout, ll t, ll diff, ll m = 1, ll M = 1e9) {

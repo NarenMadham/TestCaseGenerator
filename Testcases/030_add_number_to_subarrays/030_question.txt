@@ -1,0 +1,18 @@
+Problem Name:
+Add Numbers to the subarray
+
+Problem Statement:
+For every testcase, you will be given an integer n and q queries. For every testcase, there is a number 'x', and two indexes 'a' and 'b'. 
+
+Consider an array of size n with every element as 0. For each query, add x from indexes a through b. Print the array after performing all the q queries.
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e6
+0 <= a,b < n
+
+Input Format:
+The first line consists of the size of the array n and the number of queries followed by q lines. Each testcase has 3 space separated integers. The number to be added, and the two indexes.  
+
+Output Format:
+Print the array of n elements after performing the q queries.

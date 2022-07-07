@@ -1,0 +1,18 @@
+Problem Name:
+Array rotation
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n and an integer k. Rotate the array by k times clockwise and print the result.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In Each testcase, the first line has 2 space separated integers n and k. The following line has n space separated integers i.e. the elements of the array. 
+
+Output Format:
+Rotate the array by k times clockwise and print all the elements of the array.

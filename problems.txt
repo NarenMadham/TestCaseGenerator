@@ -7,15 +7,10 @@ MODULE 4
     Problems
     First missing positive number
     Comparing if given substring are same or not
-    segmented sieve
-    Game theory
-    Nims game
     Meet in the middle
 
 
 MODULE 5
-    Prefix and suffix sum
-    Array rotation
     Binary search on rotated array    
     Length of longest subarray with equal number of 0's and 1's
     Collecting water
