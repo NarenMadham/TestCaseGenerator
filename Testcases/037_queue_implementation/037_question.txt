@@ -1,0 +1,18 @@
+Problem Name:
+Queue Implementation
+
+Problem Statement:
+You will be given n testcases. Each of the testcase has 3 types of the queries. For the first type (1), enqueue the element (b) into the queue and do nothing. For the second type(2), print the front element of the queue. For the third type (3), dequeue the front element from the queue. In either of the cases of 2 and 3, if the queue is empty, simply print "Empty".
+
+Constraints:
+1 <= t <= 1e6
+1 <= a <= 3
+1 <= b <= 1e6
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. In each testcase, there are 2 space separate integers a and b. a is the type of the query and b is the second element.
+
+Output Format:
+Self Explainatory.

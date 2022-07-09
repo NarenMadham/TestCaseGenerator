@@ -56,7 +56,7 @@ vll getRandomArray(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 	vll ar;
 	FOR(i, n)
 	ar.pb(getRand(m, M));
-	if(sorted) sortasc(ar);
+	if (sorted) sortasc(ar);
 	return ar;
 }
 
@@ -77,17 +77,17 @@ vll getRandomArrayNoDup(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 		s.insert(ele);
 		ar.pb(ele);
 	}
-	if(sorted) sortasc(ar);
+	if (sorted) sortasc(ar);
 	return ar;
 }
 
-void printpair(ofstream& fout, pll x){
+void printpair(ofstream& fout, pll x) {
 	fout << x.first << " " << x.second;
 }
 
-pll getRandomPair(ll m = 1, ll M = 1e9){
+pll getRandomPair(ll m = 1, ll M = 1e9) {
 	ll a = getRand(m, M);
-	return make_pair(a,getRand(a, M));
+	return make_pair(a, getRand(a, M));
 }
 
 void multipleRandomPair(ofstream& fout, ll t, ll diff, ll m = 1, ll M = 1e9) {
@@ -113,8 +113,9 @@ void increasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
 	fout << n << endl;
 	for (ll i = m; i < (m + n); i++)
 	{
-		fout << i << endl;
+		fout << i << " ";
 	}
+	fout << endl;
 }
 
 void decreasingContigous(ofstream &fout, ll n, ll m = 1, ll M = 1e9)
@@ -327,7 +328,22 @@ void multipleRandomArrays(ofstream &fout, ll t, ll maxSize, ll m = 1, ll M = 1e9
 	while (t--)
 	{
 		int n = getRand(m, maxSize);
+		if (n == 1) n = getRand(m, maxSize);
 		randomArray(fout, n, m, M);
+	}
+}
+
+void multipleRandomArraysNoDup(ofstream &fout, ll t, ll maxSize, ll m = 1, ll M = 1e9)
+{
+	fout << t << endl;
+	while (t--)
+	{
+		int n = getRand(m, maxSize);
+		if (n == 1) n = getRand(m, maxSize);
+		fout << n << endl;
+		vll ar = getRandomArrayNoDup(n, m, M);
+		FOR(i, ar.size()) fout << ar[i] << " ";
+		fout << endl;
 	}
 }
 
@@ -497,5 +513,17 @@ void stringSubstringMultiple(ofstream &fout, ll t, ll maxSize)
 		else res += getRandomString(k);
 		for (int i = idx; i < t.length(); i++) res += t[i];
 		fout << res << " " << p << endl;
+	}
+}
+
+void typeQueries(ofstream& fout, ll t, ll m1, ll M1, ll m2, ll M2) {
+	fout << t << endl;
+	while (t--) {
+		int x =  getRand(m1, M1);
+		int y =  getRand(m2, M2);
+		if (x == 1)
+			fout << x << " " << y << endl;
+		else
+			fout << x << endl;
 	}
 }

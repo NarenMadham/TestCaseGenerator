@@ -1,0 +1,18 @@
+Problem Name:
+Binary Search on rotated array
+
+Problem Statement:
+In every testcase, You will be given an array of integers and an integer k. The array of integers is a sorted array which is rotated. Print the index at which the element k is present in the array. Every array will definitely have the element k in it.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+1 <= ar[i] < 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line has the size of the array and the integer k. The following line has the n space separated integers.
+
+Output Format:
+Print the index at which the element k is present. Follow 1-based indexing. 

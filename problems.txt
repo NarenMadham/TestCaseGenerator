@@ -11,11 +11,6 @@ MODULE 4
 
 
 MODULE 5
-    Binary search on rotated array    
-    Length of longest subarray with equal number of 0's and 1's
-    Collecting water
-    Sum of bitwise OR of all subarrays
-    
     Stacks
     Queues
     Circular queues

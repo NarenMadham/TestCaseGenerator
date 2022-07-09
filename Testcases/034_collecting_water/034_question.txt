@@ -1,0 +1,21 @@
+Problem Name:
+Collecting water
+
+Problem Statement:
+Imagine a 2 dimensional world where all the buildings are attached to each other. It's rainy season and its raining. The water is accumulated between the buildings since they are attached to each other. Each building is of width 1 unit.
+
+For every testcase, you will be given an array of integers which are the heights of the buildings. Find the amount of water that is accumulated on all the buildings together and print the result.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line is the length of the array. The following line are the n space separated integers.
+
+Output Format:
+Print a single integer which is the amount of water that is accumulated on the top of all the buildings together.
+
