@@ -1,0 +1,18 @@
+Problem Name:
+Mirror of a tree
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n. Construct a Binary search tree with the given array of elements. Modify the tree in a way that it looks like in a mirror. Print the inorder traversal of the mirrored tree.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line is a single integer. The following line has n space separated integers.
+
+Output Format:
+Print an array of n integers which is the inorder traversal of the mirrored tree.

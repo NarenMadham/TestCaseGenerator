@@ -1,0 +1,18 @@
+Problem Name:
+Sliding window minimum
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n and an integer k. Print the minimum in every subarray k.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 2e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line are 2 space separated integers n and k. The following line are the n space separated integers.
+
+Output Format:
+Print the minimum of every subarray of size k

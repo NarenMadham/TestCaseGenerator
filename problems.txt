@@ -11,13 +11,12 @@ MODULE 4
 
 
 MODULE 5
+    Stacks
+        Stock span
     Circular queues
     getMax() in constant time using a stack
     Queue using stack
     
-    Queue problems
-        Killing dragons
-
 MODULE 6
     Linked Lists
         Print the linked list
@@ -38,29 +37,12 @@ MODULE 6
 
 
 MODULE 7
-    Binary Trees
-        CBT and FBT
-        tree traversals
-        Mirror of a tree
-        Lever order traversal
-        count nodes of a tree
-        sum of all elements of a tree
-        Maximum element of a tree
-        height of a tree
-        Keeping track of level ends
-        sum of numbers formed by appending numbers of all the paths
-    Binary Search tree
-        Insertion 
-        Deletion
-        Trim the BST
-    Check if the given Binary tree is a BST or not
-    Given inorder and preorder. Generate Postorder
-    Path with longest sum
-    Nodes at distance k
-    vertical order traversal
     left view
-    top view
-
+    sum of numbers formed by appending numbers of all the paths
+    Check if the given Binary tree is a BST or not
+    Nodes at distance k
+    Given inorder and preorder. Generate Postorder
+    
 
 MODULE 8
     Binary Trees

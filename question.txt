@@ -10,7 +10,7 @@ Constraints:
 The sum of lengths of all the arrays will not exceed 2e6
 
 Input Format:
-The first line consists of the number of testcases t followed by 3t lines. In each testcase, 
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, 
 
 Output Format:
 
