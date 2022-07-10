@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 #include "../../testcase.cpp"
-
 #define cin fin
 #define cout fout
 

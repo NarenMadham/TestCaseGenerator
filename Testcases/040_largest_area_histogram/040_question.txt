@@ -1,0 +1,20 @@
+Problem Name:
+Largest Histogram Area
+
+Problem Statement:
+A histogram is a diagram formed by placing all the bars of some height next to each other. All these bars for rectangles of some specific area.
+For every testcase, you will be given an array of integers of size n where each integer represents the size of the bar in the histogram. Find the maximum area of the histogram formed by these bars in the histogram.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line is a single integer which represents the size of the array. The following line is the array of n space separated integers.
+
+Output Format:
+Print a single integer which is the value of the maximum area of the rectangle formed by those bars of the histogram.
+

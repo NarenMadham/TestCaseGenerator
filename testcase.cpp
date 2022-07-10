@@ -12,6 +12,7 @@
 #define pb push_back
 #define pii pair<int, int>
 #define pll pair<ll, ll>
+#define buffer(x) getRand(1,x)
 #define sortasc(ar) sort(ar.begin(), ar.end())
 #define sortdsc(ar) sort(ar.begin(), ar.end(), greater<ll>())
 #define shuffle(ar) random_shuffle(ar.begin(), ar.end())

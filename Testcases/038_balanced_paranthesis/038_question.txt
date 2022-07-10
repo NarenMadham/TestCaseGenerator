@@ -1,0 +1,19 @@
+Problem Name:
+Balanced Brackets
+
+Problem Statement:
+For every testcase, you will be given a string 's' of length 'n' which has '(' , '{' , '[' , ']' , '}' , ')' characters only. You have to check if the given string is a having a perfectly balanced series of brackets or not.
+
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e6
+s[i] = {'(' , '{', '[', ']', '}', ')'}
+
+The sum of lengths of all the strings will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. In each testcase, there's only a single string.
+
+Output Format:
+If the series of brackets is balances, print "YES" else print "NO"

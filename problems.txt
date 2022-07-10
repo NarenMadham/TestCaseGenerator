@@ -11,18 +11,11 @@ MODULE 4
 
 
 MODULE 5
-    Stacks
-    Queues
     Circular queues
     getMax() in constant time using a stack
     Queue using stack
     
-    Stack
-        Balanced Paranthesis
-        First smaller element on the right
-        largest histogram area
     Queue problems
-        Sliding window maximum
         Killing dragons
 
 MODULE 6
