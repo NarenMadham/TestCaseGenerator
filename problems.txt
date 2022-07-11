@@ -37,10 +37,7 @@ MODULE 6
 
 
 MODULE 7
-    left view
-    sum of numbers formed by appending numbers of all the paths
     Check if the given Binary tree is a BST or not
-    Nodes at distance k
     Given inorder and preorder. Generate Postorder
     
 

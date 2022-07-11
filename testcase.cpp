@@ -23,6 +23,7 @@
 #define rotateac(ar, k) rotate(ar.begin(), ar.begin()-k, ar.end())
 
 #define FOR(i, n) for (int i = 0; i < n; i++)
+#define MOD 1000000007
 
 #define umii unordered_map<int, int>
 #define mii map<int, int>
@@ -359,6 +360,24 @@ void multipleArraysOneParam(ofstream &fout, ll t, ll maxSize, ll m = 0, ll M = 1
 			sortasc(res);
 		int k = getRand(1, n);
 		fout << n << " " << k << endl;
+		FOR(i, n)
+		fout << res[i] << " ";
+		fout << endl;
+	}
+}
+
+void multipleArraysTwoParam(ofstream &fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool sorted = false)
+{
+	fout << t << endl;
+	while (t--)
+	{
+		int n = getRand(1, maxSize);
+		vll res = getRandomArrayNoDup(n, m, M);
+		if (sorted)
+			sortasc(res);
+		int k = getRand(1, n);
+		ll x = res[getRand(0, n - 1)];
+		fout << n << " " << k << " " << x << endl;
 		FOR(i, n)
 		fout << res[i] << " ";
 		fout << endl;

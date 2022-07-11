@@ -1,0 +1,19 @@
+Problem Name:
+Left view of the tree
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n. Construct a Binary Search Tree with all the elements of the array. Print all the nodes that you can see in a tree when viewed from the left side of the tree in an order of top to bottom
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line is a single integer n. The following line has n space separated integers.
+
+Output Format:
+Print the left view of the tree.
+
