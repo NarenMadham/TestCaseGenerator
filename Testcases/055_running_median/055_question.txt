@@ -1,0 +1,18 @@
+Problem Name:
+Running Median
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n. For every index i in the array, you have to print the median of the array from beginning to that specific index. If the size of the subarray is odd, then consider the middlemost element as the median. If the size of the subarray is even, then consider the average of the middle 2 elements (consider integer division).
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, The first line has a single integer which is the size of the array. The second line has n space separated integers.
+
+Output Format:
+Print n space separated integers for every testcase.

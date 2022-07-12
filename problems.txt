@@ -38,32 +38,19 @@ MODULE 6
 
 MODULE 7
     Check if the given Binary tree is a BST or not
-    Given inorder and preorder. Generate Postorder
+    LCA in Binary tree
     
-
 MODULE 8
     Binary Trees
-        Iterative preorder traversal
-        Iterative inorder traversal
         LCA in BST
-        LCA in Binary tree
-        Convert BST to DLL
-        Convert DLL to BST
     Heap
-        Introduction and coding a heap
-        Print k smallest elements of the heap
-        Quick select algorithm
-        Print a matrix in sorted order whose rows are sorted
-        Anytime Median
     Trie
         Introduction and Coding
 
 
 MODULE 9
     Trie
-        Find the number of string that starts with a given prefix
         Number of distinct rows in a given matrix
-        Maximum XOR value pair in an array
         Maximum XOR subarray in an array
         Partition the string with the dictionary of words
     Dynamic Programming (1D)

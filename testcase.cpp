@@ -12,6 +12,8 @@
 #define pb push_back
 #define pii pair<int, int>
 #define pll pair<ll, ll>
+#define pqmax(x) priority_queue<x>
+#define pqmin(x) priority_queue<x, vector<x>, greater<x> >
 #define buffer(x) getRand(1,x)
 #define sortasc(ar) sort(ar.begin(), ar.end())
 #define sortdsc(ar) sort(ar.begin(), ar.end(), greater<ll>())
@@ -23,6 +25,7 @@
 #define rotateac(ar, k) rotate(ar.begin(), ar.begin()-k, ar.end())
 
 #define FOR(i, n) for (int i = 0; i < n; i++)
+#define FOR1(i, j, k) for (int i = j; i < k; i++)
 #define MOD 1000000007
 
 #define umii unordered_map<int, int>
@@ -349,13 +352,18 @@ void multipleRandomArraysNoDup(ofstream &fout, ll t, ll maxSize, ll m = 1, ll M 
 	}
 }
 
-void multipleArraysOneParam(ofstream &fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool sorted = false)
+void multipleArraysOneParam(ofstream &fout, ll t, ll maxSize, ll m = 0, ll M = 1e9, bool noDup = false, bool sorted = false)
 {
 	fout << t << endl;
 	while (t--)
 	{
 		int n = getRand(1, maxSize);
-		vll res = getRandomArray(n, m, M);
+		vll res ;
+		if (noDup) {
+			res = getRandomArrayNoDup(n, m, M);
+		} else {
+			res = getRandomArray(n, m, M);
+		}
 		if (sorted)
 			sortasc(res);
 		int k = getRand(1, n);

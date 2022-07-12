@@ -1,0 +1,18 @@
+Problem Name:
+Quick Select
+
+Problem Statement:
+Given an array of integers of size n and an integer k, print the kth smallest element from the array.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line has 2 space separated integers, the size of the array and k. The following line has n space separated integers.
+
+Output Format:
+Print a single integer which is the kth smallest integer.

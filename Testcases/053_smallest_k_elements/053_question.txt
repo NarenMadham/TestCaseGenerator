@@ -1,0 +1,18 @@
+Problem Name:
+Smallest k elements
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n and an integer k. You will have to print the smallest k elements among the given n integers of the array.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line has 2 space separated integers. The size of the array and the value of k. The following line has n space separated integers.
+
+Output Format:
+Print k space separated integers which are the smallest k elements of all the integers.

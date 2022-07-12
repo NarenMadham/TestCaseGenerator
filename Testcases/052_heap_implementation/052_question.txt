@@ -1,0 +1,18 @@
+Problem Name:
+Heap Implementation
+
+Problem Statement:
+Construct a Max heap. You will be given three types of testcases. For query type 1, you have to push an element in the max heap that you are going to construct. For query type 2, you have the print the maximum of the heap. For query type 3, you have to extract the max element from the heap.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. 
+
+Output Format:
+Self explainatory

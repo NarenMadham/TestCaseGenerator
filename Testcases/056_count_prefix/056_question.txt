@@ -1,0 +1,19 @@
+Problem Name:
+Count prefixes
+
+Problem Statement:
+You will be given a list of 't' words. You will be given 'q' queries where each query is a string. You have to find out the number of words that start with the given prefix.
+
+Constraints:
+1 <= t <= 1e3
+1 <= q <= 1e3
+a <= str[i] <= z
+
+The sum of lengths of all the strings will not exceed 2e6
+
+Input Format:
+The first line consists of the number of strings followed by t lines where each line is a single string without any space. The following line is q. The next q lines are a single string without any space
+
+Output Format:
+Print a single integer for each query which is the number of words that have the query as the prefix.
+
