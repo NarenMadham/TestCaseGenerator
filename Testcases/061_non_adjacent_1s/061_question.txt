@@ -1,0 +1,15 @@
+Problem Name:
+Non Adjacent set bits
+
+Problem Statement:
+For every testcase, you will be given a length of the string in. The string is going to have only binary numbers. You have to find the number of strings such that there are not more than 2 adjacent set bits. 
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. In each testcase, there is a single integer which is the length of the string.
+
+Output Format:
+Print a singel integer which is the number of possible strings.

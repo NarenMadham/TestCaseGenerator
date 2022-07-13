@@ -1,0 +1,18 @@
+Problem Name:
+Tiling Problem
+
+Problem Statement:
+You are given a floor of surface n x 5 units. The height of the surface is fixed. The width varies with every testcase. You will having infinite supply of 1 x n tiles in 2 colors, black or white. You can place a tile either horizontally or vertically. The entire surface of the floor should be covered.
+
+For every testcase, you will be given the size of the surface. Print the number of ways to print the entire surface area. 
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. In each testcase, you will be given a single integer which is the size of the floor.
+
+Output Format:
+Print a single integer as the output which is the number of ways. Since, the value may be more, print the output as % (1e9 + 7)
+

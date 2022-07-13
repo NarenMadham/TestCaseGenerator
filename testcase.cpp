@@ -5,6 +5,7 @@
 #define ll long long
 #define lll __uint128_t
 #define vi vector<int>
+#define vvi vector<vector<int> >
 #define vb vector<bool>
 #define vc vector<char>
 #define vll vector<ll>

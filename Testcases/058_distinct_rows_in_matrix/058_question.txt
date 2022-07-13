@@ -1,0 +1,19 @@
+Problem Name:
+Distinct rows in a matrix
+
+Problem Statement:
+For every testcase, you will be given a binary matrix of size n x m. You have to count the distinct rows of a matrix and print the count as the result.
+
+Constraints:
+1 <= t <= 1e2
+1 <= n,m <= 1e2
+0 <= ar[i] <= 1
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t. In each testcase, the first line has 2 space separated integers n and m. The following n lines are binary strings 
+
+Output Format:
+Print the single integer as the output.
+

@@ -50,16 +50,9 @@ MODULE 8
 
 MODULE 9
     Trie
-        Number of distinct rows in a given matrix
-        Maximum XOR subarray in an array
         Partition the string with the dictionary of words
     Dynamic Programming (1D)
-        Identifying a DP problem
-        Approaching a DP problem
         Overlapping subproblems
-            starcase
-            Tiling problem
-            non-adjacent 1's
             No.of ways to roll a dice
         Optimal Substructure
             Painting houses

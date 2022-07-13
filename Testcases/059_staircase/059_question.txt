@@ -1,0 +1,17 @@
+Problem Name:
+Staircase Problem
+
+Problem Statement:
+A man is trying to get on a staircase. The man can climb either one step or two steps at a time. 
+For every testcase, you will be given the length of the staircase. You have to print the number of different ways to reach the top of the staircase. 
+
+Constraints:
+1 <= t <= 1e6
+1 <= n <= 1e6
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. Each testcase has a single integer i.e. the length of the staircase.
+
+Output Format:
+Print the single integer as the output which is the number of ways to climb the staircase. Since the answer is large, print % 1e9 + 7
+

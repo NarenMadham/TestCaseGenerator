@@ -1,0 +1,19 @@
+Problem Name:
+Painting Houses
+
+Problem Statement:
+There are n houses in a street. Each house can be painted in either red, blue or green. No two adjacent houses can be painted in same color. 
+For every testcase, you will be given three arrays. The first array gives the cost of painting the ith house in red, second array is for blue and the third is for green. Find the minimum cost to paint all the houses such that no two adjacent houses will be painted in same color.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 4t lines. In each testcase, The first line is the size of the array. The second, third and fourth lines have n space separated integers. 
+
+Output Format:
+Print a single integer which is the minimum cost to paint all the houses.
