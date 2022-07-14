@@ -1,0 +1,19 @@
+Problem Name:
+Workshop Machines
+
+Problem Statement:
+There is a workshop where there are 2 machines. These machines might take different cost to perform a task i. All these tasks are continous i.e. you have to solve the ith task and then move to i+1 task. You can shift from one machine to another but it comes with a cost k. 
+For every testcase, you will be given 2 integer arrays of length n and a integer cost k. Find the minimum cost required to complete all the tasks.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e5
+1 <= ar[i], br[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 3t lines. In each testcase, the first line has 2 space separated integers n and k. The following line n space separted integers which are the costs for the first machine. The next line also has n space separted integers which are the costs of B machine.
+
+Output Format:
+Print the minimum cost required to complete all the tasks by the two machines. 

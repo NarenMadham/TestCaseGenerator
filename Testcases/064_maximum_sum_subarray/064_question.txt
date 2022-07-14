@@ -1,0 +1,19 @@
+Problem Name:
+Maximum sum Subarray
+
+Problem Statement:
+For every testcase, you will be given an array of integers of size n which has both positive and negative integers. Find the subarray with the maximum. You have to print the value of the sum and also the indexes where the subarray starts and ends. If there are multiple such subarrays, print the one that ends first.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e9
+-1e9 <= ar[i] <= 1e9
+
+The sum of lengths of all the arrays will not exceed 2e6
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line has the size of the arrray and the following line has n space separated integers.
+
+Output Format:
+Print 3 space separated integers. The first one being the maximum sum of all subarrays. The next two integers being the beginning and ending indexes of the subarray.
+

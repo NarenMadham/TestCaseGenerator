@@ -55,10 +55,6 @@ MODULE 9
         Overlapping subproblems
             No.of ways to roll a dice
         Optimal Substructure
-            Painting houses
-            Workshop machines
-            Maximum subarray sum
-            Maximum non-adjacent subsequence sum
             Longest Increasing subsequence
 
 MODULE 10

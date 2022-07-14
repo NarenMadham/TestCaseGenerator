@@ -1,0 +1,17 @@
+Problem Name:
+Find NCR
+
+Problem Statement:
+For every testcase, you will be given two integers n and r. You have to print the value of ncr (Number of ways of choosing r objects out of n). 
+
+Since the value can be very big, print the value % (1e9+7)
+
+Constraints:
+1 <= t <= 1e3
+1 <= n, r <= 1e3
+
+Input Format:
+The first line consists of the number of testcases t followed by t lines. In each testcase, has 2 space separated integers n and r.
+
+Output Format:
+Print a single integer which is the value of ncr.

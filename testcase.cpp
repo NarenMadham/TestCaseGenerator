@@ -26,7 +26,7 @@
 #define rotateac(ar, k) rotate(ar.begin(), ar.begin()-k, ar.end())
 
 #define FOR(i, n) for (int i = 0; i < n; i++)
-#define FOR1(i, j, k) for (int i = j; i < k; i++)
+#define FOOR(i, j, k) for (int i = j; i < k; i++)
 #define MOD 1000000007
 
 #define umii unordered_map<int, int>
@@ -66,6 +66,16 @@ vll getRandomArray(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 	return ar;
 }
 
+vll getRandomArrayPoNe(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
+{
+	vll ar;
+	ar.pb(getRand(m, M));
+	if (sorted) sortasc(ar);
+	ll x = maxelement(ar) >> 1;
+	FOR(i, n) ar[i] -= x;
+	return ar;
+}
+
 string getRandomString(ll n)
 {
 	return rnd.next("[a-z]{" + to_string(n) + "}");
@@ -100,7 +110,7 @@ void multipleRandomPair(ofstream& fout, ll t, ll diff, ll m = 1, ll M = 1e9) {
 	fout << t << endl;
 	while (t--) {
 		ll n = getRand(m, M);
-		ll m = getRand(n + 1, n + diff);
+		ll m = getRand(1, n);
 		fout << n << " " << m << endl;
 	}
 }
@@ -325,6 +335,18 @@ void pairTestcases(ofstream &fout, ll n, ll m1, ll M1, ll m2, ll M2)
 	while (n--)
 	{
 		fout << getRand(m1, M1) << " " << getRand(m2, M2) << endl;
+	}
+}
+
+void multipleRandomArraysPoNe(ofstream& fout, ll t, ll maxSize, ll m = 1, ll M = 1e9) {
+	fout << t << endl;
+	while (t--) {
+		int n = getRand(1, maxSize);
+		vll ar = getRandomArray(n, m, M);
+		ll x = maxelement(ar) >> 1;
+		FOR(i, n) ar[i] -= x;
+		fout << n << endl;
+		FOR(i, n) fout << ar[i] << " "; fout << endl;
 	}
 }
 
