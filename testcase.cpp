@@ -6,6 +6,7 @@
 #define lll __uint128_t
 #define vi vector<int>
 #define vvi vector<vector<int> >
+#define vvll vector<vector<ll> >
 #define vb vector<bool>
 #define vc vector<char>
 #define vll vector<ll>
@@ -60,21 +61,35 @@ ll getRand(ll m = 1, ll M = 1000000000)
 vll getRandomArray(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 {
 	vll ar;
-	FOR(i, n)
-	ar.pb(getRand(m, M));
+	FOR(i, n) ar.pb(getRand(m, M));
 	if (sorted) sortasc(ar);
 	return ar;
 }
 
+
 vll getRandomArrayPoNe(ll n, ll m = 1, ll M = 1e9, bool sorted = false)
 {
 	vll ar;
-	ar.pb(getRand(m, M));
+	FOR(i, n) ar.pb(getRand(m, M));
 	if (sorted) sortasc(ar);
 	ll x = maxelement(ar) >> 1;
 	FOR(i, n) ar[i] -= x;
 	return ar;
 }
+
+
+vvll getRandomMatrix(ll x, ll y, ll m, ll M, bool pone = false) {
+	vvll res;
+	FOR(i, x) {
+		if (!pone) {
+			res.pb(getRandomArray(y, m, M));
+		} else {
+			res.pb(getRandomArrayPoNe(y, m, M));
+		}
+	}
+	return res;
+}
+
 
 string getRandomString(ll n)
 {

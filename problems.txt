@@ -59,8 +59,6 @@ MODULE 9
 
 MODULE 10
     Dynamic Programming (2D)
-        Compute NCR
-        Knapsack problem
         Coin change Problem (subsets)
         Rat in a maze problem
         Find sum of submatrix from indexes (i,j) to (k,l)
@@ -70,10 +68,13 @@ MODULE 10
     Graphs
         Introduction 
         Graph representations
+        
+        Components of a graph
         Check if a graph is a tree
-        Shortest path from source to destination
         Diameter of a graph
         Counting number of islands
+        is Bipartite
+        
+        Shortest path from source to destination
         Dijkstra
         Topological sort
-        is Bipartite

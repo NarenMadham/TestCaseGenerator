@@ -1,0 +1,18 @@
+Problem Name:
+Knapsack Problem
+
+Problem Statement:
+There is a burglar who came into a house. He wants to steal these objects. Each object has a weight and a value. The burglar has a bag of size k. The can take home the objects of only size k altogether. 
+
+For every testcase, you will be given an array of values and weights of size n and a bag size of k. Find the maximum profit that can be accumilated in the bag.
+
+Constraints:
+1 <= t, k <= 50
+1 <= n <= 1e3
+
+
+Input Format:
+The first line consists of the number of testcases t followed by 3t lines. In each testcase, the first line has 2 space separated integers n and k. The following line has an array of weights. The next line has an array of values.
+
+Output Format:
+Print a single integer which is the total value that the burglar can take home.

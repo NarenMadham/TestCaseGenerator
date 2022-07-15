@@ -1,0 +1,19 @@
+Problem Name:
+Maximum Submatrix Sum
+
+Problem Statement:
+For every testcase, you will be given an array of m rows and n columns. Find the submatrix with maximum sum
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e3
+-1e9 <= ar[i] <= 1e9
+
+The sum of lengths of all the rows and columns will not exceed 1e5
+
+Input Format:
+The first line consists of the number of testcases t. In each testcase, the first line has 2 space separated integers n and m. The following n lines have m space separated integers.
+
+Output Format:
+Print a single line for every testcase, i.e. the maximum submatrix sum.
+

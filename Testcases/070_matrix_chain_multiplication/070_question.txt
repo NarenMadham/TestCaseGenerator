@@ -1,0 +1,20 @@
+Problem Name:
+Matrix Chain Multiplication
+
+Problem Statement:
+For two matrix to be multiplied, the columns of the first matrix and the rows of the second matrix has to be same. The number of multiplications includes all the multiplications involved in each cell of the resultant matrix. 
+
+For each testcase, you will be given an array of integers of size n. The array adjacent elements of the array represents the number of rows and columns of the multiplicand matrix. Find the minimum number of multiplications involved in multiplying this chain of matrices.
+
+Constraints:
+1 <= t <= 1e3
+1 <= n <= 1e3
+1 <= ar[i] <= 1e9
+
+The sum of lengths of all the rows and columns will not exceed 1e5
+
+Input Format:
+The first line consists of the number of testcases t followed by 2t lines. In each testcase, the first line has a single integer n. The following line has n space separated integers.
+
+Output Format:
+Print a single integer which is the minimum multiplications required to multiply all the matrices. 
